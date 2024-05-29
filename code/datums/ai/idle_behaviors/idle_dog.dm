@@ -18,3 +18,6 @@
 	else if(SPT_PROB(2, seconds_per_tick))
 		living_pawn.manual_emote(pick("dances around.", "chases [living_pawn.p_their()] tail!"))
 		living_pawn.AddComponent(/datum/component/spinny)
+	// look for food to eat
+	else if(SPT_PROB(2, seconds_per_tick))
+		fetch(/obj/item/food/ in living_pawn.view())
