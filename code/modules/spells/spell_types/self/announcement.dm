@@ -20,8 +20,8 @@
  announcement_text = tgui_input_text(owner, "Insert your message to the stations denizens", "Wizards Proclamation", max_length = MAX_MESSAGE_LEN, multiline = TRUE, encode = FALSE)
 
  if(isnull(announcement_text) || announcement_text == "")
- owner.balloon_alert(owner, "cancelled announcement")
- return SPELL_CANCEL_CAST
+ 	owner.balloon_alert(owner, "cancelled announcement")
+ 	return SPELL_CANCEL_CAST
 
  return ..()
 
